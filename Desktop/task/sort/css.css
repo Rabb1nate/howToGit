@@ -1,0 +1,29 @@
+body{background-color: #9370DB;
+     width:1800px;}
+#mydiv {
+    display:flex;
+    justify-content: space-around;
+        
+}
+button{
+display:block;
+font-size:36px;
+background-color:#D2B48C;
+color:#FF4500;
+}
+#text{
+    display:block;
+    width:200px;
+    height:50px;
+    line-height:50px;
+    font-size:40px;
+    background-color:#66CDAA;
+  }
+  #show { 
+    position:relative;
+    border:3px solid #FF6347;
+    width:1500px; 
+    height:700px; 
+    margin:0 auto;
+    display:flex;
+    align-items: flex-end; }

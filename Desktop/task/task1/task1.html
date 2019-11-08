@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>
+			Document
+		</title>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="item">
+				爱好
+			</li>
+			<li class="item">
+				评论
+			</li>
+			<li class="item">
+				运动
+			</li>
+		</ul>
+		<script type="text/javascript">
+			var require = document.getElementsByClassName('nav');
+// console.log(require);
+var newnode1 = document.createElement('li');
+var newnode2 = document.createElement('li');
+newnode1.innerHTML = '首页';
+// console.log(newnode1);
+newnode2.innerHTML = '关于';
+var require0 = document.getElementsByClassName('item');
+// require[0].insertBefore(newnode1, require[0].childNodes[0]);
+require[0].insertBefore(newnode1,require0[0]);
+require[0].appendChild(newnode2);
+// var require0 = document.getElementsByClassName('item');
+var newnode3 = document.createElement('li');
+var textnode = document.createTextNode('文章');
+newnode3.appendChild(textnode);
+require[0].replaceChild(newnode3, require0[2])
+require[0].removeChild(require0[1]);
+		</script>
+	</body>
+</html>
